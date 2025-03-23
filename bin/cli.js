@@ -18,6 +18,7 @@ program
   .argument('<inputFile>', 'Input CSS file path')
   .argument('[outputFile]', 'Output CSS file path (optional, defaults to input file)')
   .option('-t, --theme <theme>', 'Color theme (light or dark)', 'light')
+  .option('-f, --force', 'Force regeneration of all color formats', false)
   .action(async (inputFile, outputFile, options) => {
     try {
       // Make the input path absolute
@@ -39,11 +40,15 @@ program
       // Transform the file
       console.log(`Transforming colors in ${inputPath}...`);
       console.log(`Theme detection: ON (Will auto-detect light/dark colors)`);
+      if (options.force) {
+        console.log(`Force mode: ON (Will regenerate all color formats)`);
+      }
       
       await transform({
         input: inputPath,
         output: outputPath,
-        theme: options.theme // Used as fallback if auto-detection fails
+        theme: options.theme, // Used as fallback if auto-detection fails
+        force: options.force
       });
       
       console.log(`\nColor transformation complete!`);
@@ -54,7 +59,7 @@ program
       }
       
       console.log('\nRemember: Only edit the original HEX values in your CSS file.');
-      console.log('   All other color formats are automatically generated during transform.');
+      console.log('All other color formats are automatically generated during transform.');
       
     } catch (error) {
       console.error(`Error: ${error.message}`);

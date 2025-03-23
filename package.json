@@ -20,7 +20,7 @@
   "author": "Josh Hoy (https://j-o.sh)",
   "license": "MIT",
   "dependencies": {
-    "commander": "^11.0.0"
+    "commander": "^11.1.0"
   },
   "engines": {
     "node": ">=14.16"
