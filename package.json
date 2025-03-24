@@ -3,14 +3,14 @@
   "version": "1.0.1",
   "homepage": "https://mid.engineering/constellation",
   "description": "Making design systems pop since 2025—Constellation converts HEX colors to Alpha, OKLCH, and P3 spaces.",
-  "main": "src/index.js",
   "type": "module",
   "bin": {
     "constellation": "./bin/cli.js"
   },
   "scripts": {
-    "test": "node test/index.js"
-  },
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+},
   "keywords": [
     "color-conversion",
     "design-system",
@@ -22,11 +22,12 @@
     "dark-theme"
   ],
   "files": [
+    "dist/",
     "bin/",
-    "src/index.js",
     "README.md",
     "LICENSE"
-  ],
+],
+  "main": "dist/index.js",
   "author": "Josh Hoy (https://j-o.sh)",
   "license": "MIT",
   "dependencies": {
@@ -37,5 +38,9 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "rollup": "^4.37.0"
   }
 }

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { Command } from 'commander';
-import { transform } from '../src/index.js';
+import { transform } from '../dist/index.js';
 import path from 'path';
 import fs from 'fs/promises';
 
