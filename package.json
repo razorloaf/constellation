@@ -1,6 +1,6 @@
 {
   "name": "@razorloaf/constellation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://mid.engineering/constellation",
   "description": "Making design systems pop since 2025—Constellation converts HEX colors to Alpha, OKLCH, and P3 spaces.",
   "main": "src/index.js",
@@ -22,11 +22,11 @@
     "dark-theme"
   ],
   "files": [
-  "bin/",
-  "src/index.js",
-  "README.md",
-  "LICENSE"
-],
+    "bin/",
+    "src/index.js",
+    "README.md",
+    "LICENSE"
+  ],
   "author": "Josh Hoy (https://j-o.sh)",
   "license": "MIT",
   "dependencies": {
