@@ -21,6 +21,12 @@
     "light-theme",
     "dark-theme"
   ],
+  "files": [
+  "bin/",
+  "src/index.js",
+  "README.md",
+  "LICENSE"
+],
   "author": "Josh Hoy (https://j-o.sh)",
   "license": "MIT",
   "dependencies": {
