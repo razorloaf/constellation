@@ -4,7 +4,7 @@
 
 ## Installation
 
-Learn how to install, import, and use at [mid.engineering/constellation](https://mid.engineering/constellation)
+Learn how to install, import, and use at [mid.engineering/docs/constellation](https://mid.engineering/docs/constellation)
 
 
 ## Author
