@@ -1,7 +1,7 @@
 {
   "name": "@razorloaf/constellation",
   "version": "1.0.3",
-  "homepage": "https://mid.engineering/docs/constellation",
+  "homepage": "https://j-o.sh/docs/constellation",
   "description": "Making design systems pop since 2025—Constellation converts HEX colors to Alpha, OKLCH, and P3 spaces.",
   "type": "module",
   "bin": {
